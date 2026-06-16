@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #1e293b;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    width: 100%;
+    max-width: 450px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #38bdf8;
+}
+
+.output-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+#password-display {
+    flex: 1;
+    padding: 0.75rem;
+    border: 2px solid #334155;
+    border-radius: 6px;
+    background-color: #0f172a;
+    color: #f8fafc;
+    font-family: monospace;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#copy-btn, #generate-btn {
+    cursor: pointer;
+    background-color: #38bdf8;
+    color: #0f172a;
+    border: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+#copy-btn { padding: 0 1rem; }
+#copy-btn:hover, #generate-btn:hover { background-color: #7dd3fc; }
+
+/* Estilo específico do botão de gerar para destaque no final do card */
+#generate-btn {
+    width: 100%;
+    padding: 0.85rem;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.option-group input[type="range"] {
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}

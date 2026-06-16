@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas Seguras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de Senhas</h1>
+        
+        <div class="output-container">
+            <input type="text" id="password-display" readonly placeholder="Clique em 'Gerar Senha'">
+            <button id="copy-btn">Copiar</button>
+        </div>
+
+        <div class="options">
+            <div class="option-group">
+                <label for="length-slider">Tamanho: <span id="length-val">16</span> caracteres</label>
+                <input type="range" id="length-slider" min="8" max="32" value="16">
+            </div>
+
+            <div class="checkbox-group">
+                <label><input type="checkbox" id="uppercase" checked> Incluir Letras Maiúsculas (A-Z)</label>
+                <label><input type="checkbox" id="lowercase" checked> Incluir Letras Minúsculas (a-z)</label>
+                <label><input type="checkbox" id="numbers" checked> Incluir Números (0-9)</label>
+                <label><input type="checkbox" id="symbols" checked> Incluir Símbolos (!@#$...)</label>
+            </div>
+        </div>
+
+        <button id="generate-btn">Gerar Senha Forte</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
